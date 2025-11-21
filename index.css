@@ -226,7 +226,7 @@ body {
     } 
     
     .aboutme {
-        z-index: 2;
+        z-index: 3;
         width: 75%;
         background-color: white;
         margin: auto;
