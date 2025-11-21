@@ -156,7 +156,7 @@ body {
         display: flex;
         width: min-content;
         margin: auto;
-        margin-top: 30%;
+        margin-top: 32%;
         user-select: none;
 
         button {
@@ -299,35 +299,47 @@ body {
         
     }
     
-    .Maintext { 
+    .Maintext {
         position: absolute;
         display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        justify-content: flex-start;
         height: 63%;
         width: 75%;
         background-color: aliceblue;
         border-radius: 35px;
         top: 20%; left: 12.5%; right: 0; bottom: 0;
-
-        img{
-            border-radius: 50px;
-            margin-top: 8%;
-            margin-left: 13px;
-            user-select: none;
-        }
-        .text3{
-            font-weight: bold;
-            text-decoration: underline;
-            margin-left: 20%;
-            margin-top: 4%;
-            user-select: none;
-        }
     }
-    
-    .paragraph2{
-            font-weight: 650;
-            margin-top: 9%;
-            margin-right: 20%;
-            margin-left: -30%;
-            user-select: none;
-        }
+
+    .Maintext img{
+        width: 30%;        
+        height: 50%;       
+        border-radius: 50px;
+        margin-top: 6%;     
+        margin-bottom: 4%;
+        margin-right: 65%;  
+        user-select: none;
+    }
+    .text3 {
+        font-weight: bold;
+        text-decoration: underline;
+        margin: 10px 0;         
+        text-align: left;
+        width: 80%;
+        margin-top: -25%;
+        margin-left: 35%;             
+        user-select: none;
+    }
+    .paragraph2 {
+        border-radius: 15px;
+        font-weight: 650;
+        margin: 0 0 0 0;    
+        width: 50%;
+        margin-top: 2%;
+        height: 10%;            
+        user-select: none;
+        text-align: left;
+        margin-left: 35%;
+    }
 }

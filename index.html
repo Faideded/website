@@ -1,54 +1,45 @@
 <!DOCTYPE html>
-
+<html lang="en">
 
 <head>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="index.css">
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
     </style>
 </head>
-
-
 <body>
-
     <div class="Aboutmebackgroundblur"></div>
     <div class="aboutme" id="aboutmepopup">
         <h1 class="text2">About me</h1>
         <img src="ui photo.svg" class="photo1" draggable="false">
-        <p class="paragraph1">I’m Oliver Betts, an aspiring UI/UX programmer with a long-time passion for creating digital experiences
-        that feel clean, intuitive, and enjoyable to use. I’ve always been drawn to the space where design meets technology—where
-        a smart layout or small interaction can make someone’s day a little easier.</p>
-        <p class="paragraph1">I love digging into how people actually use products, spotting the moments where things feel confusing, and redesigning them into something smooth and satisfying. 
-        Whether I’m sketching out interface ideas, experimenting with layouts, or refining interactions, I’m always aiming to create experiences that look great and feel right.</p>
-        <p class="paragraph1">I continue to grow in UI/UX, I’m constantly learning, exploring new tools, and pushing myself to design with both clarity and personality. 
-        My goal is to build interfaces that aren’t just functional, but memorable—interfaces that leave users thinking, “That was simple, and I enjoyed it.”</p>
-    <div class="aboutmeX" style="visibility: hidden;" id="abtmeexit">
-    <button onclick="hideaboutme()" class="aboutmeX"><img src="letterx.svg" draggable="false"></button>
+        <p class="paragraph1">My name is Oliver Betts, an aspiring UI/UX programmer with a long-time passion for creating digital experiences
+        that feel clean, intuitive, and enjoyable to use...</p>
+        <p class="paragraph1">I love digging into how people actually use products, spotting the moments where things feel confusing, 
+        and redesigning them into something smooth and satisfying...</p>
+        <p class="paragraph1">I continue to grow in UI/UX, I’m constantly learning, exploring new tools, 
+        and pushing myself to design with both clarity and personality...</p>
+        <div class="aboutmeX" style="visibility: hidden;" id="abtmeexit">
+            <button onclick="hideaboutme()" class="aboutmeX"><img src="letterx.svg" draggable="false"></button>
+        </div>
     </div>
-</div>
-    
+
     <div class="Topbar">
         <button onclick="homepagereload()" id="button1">Home</button>
-        <button onclick="showaboutme()" id="button2">About me</button>   
+        <button onclick="showaboutme()" id="button2">About me</button>
     </div>
-        <h1 class="text1" style="color: aliceblue;">Start project - A1</h1>
-    <div class="Maintext">
-        <img src="A1.svg" height="50%" width="30%" draggable="false">
-        <h1 class="text3" style="width: 80%; height: 10%;">About This</h1>
-        <p class="paragraph2" style="width: auto; height: auto;" draggable="false">For this project i was tasked with creating a blender scene for certain themes of work. 
-            we were given a breif and told how to do the project and with what information needed to be displayed.
-            For my theme i chose to do "Medieval" as it was something that i knew about before the project and had
-            looking into in the past. Coming into this project i feel that i was unpreppared which is only due to 
-            myself and my lack of time management. However i tried as hard as i could and it was a great project
-            to start the course with and i feel that i got the best grade i could. Overall my Development diary was decent 
-            with a little over 30 pages of A4 and 5,300 words with detailed pictures and explainations telling the reader
-            exactly what they want to see. 
-        </p>
-        <p class="paragraph3" style="width: 80%; height: 10%;">
-            We also had the task of creating 
-        </p>
 
+    <h1 class="text1" style="color: aliceblue;">Start project - A1</h1>
+    <div class="Maintext">
+        <img src="A1work.png" class="project-image" draggable="false">
+        <div class="maintext-content">
+            <h1 class="text3">About This</h1>
+            <p class="paragraph2">For this project I was tasked with creating a blender scene for certain themes of work. 
+            We were given a brief and told how to do the project and what information needed to be displayed. 
+            For my theme I chose “Medieval”. Overall, my Development diary was decent with a little over 30 pages of A4 and 
+            5,300 words with detailed pictures and explanations telling the reader exactly what they want to see. I was also tasked with producing some Concept art
+            which i made 3 basic designs and one final design which i annotated accordingly </p>
+        </div>
     </div>
     <div class="Middlebar">
         <button><img src="Leftarrow.svg" draggable="false"></button>
@@ -57,5 +48,6 @@
     <div class="Bottombutton">
         <button style="color:aliceblue">Download .Blend</button>
     </div>
-    <script type="text/javascript" src="/index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
+</html>
