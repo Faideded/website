@@ -283,14 +283,19 @@ body {
         margin: center;
         margin-left: 45%;
     }
+
     .paragraph1{
         margin-left: 35%;
-        margin-right: 10%;
+        margin-right: 18%;
         margin-top: 5%;
         user-select: none;
         font-weight: 600;
+        font-size: x-large;
     }
+
     .photo1 {
+        border-radius: 15px;
+        margin-left:2%;
         position: absolute;
         margin-top: 7%;
         height: 30%;
@@ -321,6 +326,7 @@ body {
         margin-right: 65%;  
         user-select: none;
     }
+
     .text3 {
         font-weight: bold;
         text-decoration: underline;
@@ -331,6 +337,7 @@ body {
         margin-left: 35%;             
         user-select: none;
     }
+    
     .paragraph2 {
         border-radius: 15px;
         font-weight: 650;
