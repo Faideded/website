@@ -197,11 +197,7 @@ body {
             transform: scale(1.05);
             box-shadow: 0 0 20px #28b7ff;
         }
-        button:hidden {
-            transform: scale(0);
-            opacity: 0%;
-            transition: ease-out 0s;
-        }
+        
         
     }
     .Downloadmenu {
@@ -221,9 +217,9 @@ body {
         left: 0;
         top: 0;
         z-index: 2;
-        backdrop-filter: blur(35px);
-        background: rgba(0,0,0,0.3); /* optional: dim background */
-        display: none; /* hide until popup shows */
+        backdrop-filter: blur(5px);
+        background: rgba(0,0,0,0.3);
+        display: none;
     }
 
 
