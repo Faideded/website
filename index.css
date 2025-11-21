@@ -9,18 +9,6 @@
 body {
     background-color: rgb(29, 27, 27);
 
-    .logoname{
-        z-index: 2;
-        display: flex;
-        height: min-content;
-        width: 8%;
-        background-color: rgb(53, 53, 53);
-        user-select: none;
-        color: rgb(194, 194, 194);
-        border-radius: 50px;
-        position: absolute;
-    }
-
     .text1 {
         margin-left: 43%;
         margin-top: 4%;
