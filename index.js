@@ -21,3 +21,10 @@ function hideaboutme() {
     button = document.getElementById("button2");
     button.disabled = false;
 }
+
+/*not working start making*/
+function leftarrowchange() {
+
+
+}
+/*not working start making*/
