@@ -130,7 +130,7 @@ body {
         button {
             width: 50px;
             height: 40px;
-            background: #f0f0f0;
+            background: #dadada;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -141,14 +141,14 @@ body {
         }
 
         button h2 {
-            color: rgb(61, 61, 61);
+            color: rgb(70, 70, 70);
             position: relative;
              z-index: 2;
         }
 
         button:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(107, 107, 107, 0.5);
+            box-shadow: 0 0 20px rgba(54, 54, 54, 0.5);
         }
     }
     
@@ -156,7 +156,7 @@ body {
         display: flex;
         width: min-content;
         margin: auto;
-        margin-top: 32%;
+        margin-top: 30.2%;
         user-select: none;
 
         button {
