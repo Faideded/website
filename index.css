@@ -272,7 +272,23 @@ body {
         border-radius: 50px;
     }
     
-    
+    .downloadbutton3{
+        user-select: none;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bold;
+        color: rgb(233, 233, 233);
+        display: flex;
+        margin-top: 8%;
+        margin-left: 3%;
+        background-color: #28b7ff;
+        width: 13%;
+        height: 7%;
+        border: 0px;
+        border-radius: 50px;
+    }
+
 .aboutme {
     opacity: 0;
     pointer-events: none;
