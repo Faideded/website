@@ -294,7 +294,7 @@ body {
         font-weight: bolder;
         color: rgb(233, 233, 233);
         display: flex;
-        margin-top: -19%;
+        margin-top: -36%;
         margin-left: 40%;
         background-color: #28b7ff;
         width: 20%;
@@ -312,7 +312,7 @@ body {
         font-weight: bolder;
         color: rgb(233, 233, 233);
         display: flex;
-        margin-top: -19%;
+        margin-top: -32.5%;
         margin-left: 77%;
         background-color: #28b7ff;
         width: 20%;
@@ -452,8 +452,8 @@ body {
         margin: 10px 0;         
         text-align: left;
         width: 80%;
-        margin-top: -25%;
-        margin-left: 35%;             
+        margin-top: -31%;
+        margin-left: 45%;             
         user-select: none;
     }
 
@@ -461,12 +461,12 @@ body {
         border-radius: 15px;
         font-weight: 650;
         margin: 0 0 0 0;    
-        width: 50%;
+        width: 40%;
         margin-top: 2%;
         height: 10%;            
         user-select: none;
         text-align: left;
-        margin-left: 35%;
+        margin-left: 45%;
     }
 
     .slideshow-container {
@@ -475,6 +475,7 @@ body {
     right: 25%;
     top: 6%;
     scale: 0.6;
+    user-select: none;
     }
 
     .mySlides {
@@ -494,10 +495,15 @@ body {
 
     .numbertext {
     color: #000000;
-    font-size: 12px;
+    font-size: 22px;
     padding: 8px 12px;
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0; left: -5%; right: 0; bottom: 0;
     user-select: none;
+    }
+
+    .IMG2 {
+        border-radius: 100px;
+        width: 30%;
     }
 }
