@@ -255,6 +255,12 @@ body {
             box-shadow: 0 0 20px #dddddd;
         }
     }
+    .downloadheading{
+        font-weight: bolder;
+        text-decoration: underline;
+        text-align: center;
+        user-select: none;
+    }
     .downloadbutton2{
         user-select: none;
         justify-content: center;
@@ -271,7 +277,7 @@ body {
         border: 0px;
         border-radius: 50px;
     }
-    
+
     .downloadbutton3{
         user-select: none;
         justify-content: center;
