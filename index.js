@@ -31,7 +31,7 @@ function leftarrowchange() {
 
 function showdownload(){
     document.getElementById("downloadpopup").classList.add("visible");
-    document.getElementById("abtmeexit").style.visibility= "visible";
+    document.getElementById("Downloadexit").style.visibility= "visible";
     var button = document.getElementById("button1");
     button.disabled = true;
     button = document.getElementById("button2");
