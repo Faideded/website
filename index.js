@@ -32,6 +32,7 @@ function leftarrowchange() {
 function showdownload(){
     document.getElementById("downloadpopup").classList.add("visible");
     document.getElementById("Downloadexit").style.visibility= "visible";
+    document.querySelector(".Aboutmebackgroundblur").style.display = "block";
     var button = document.getElementById("button1");
     button.disabled = true;
     button = document.getElementById("button2");
@@ -40,6 +41,7 @@ function showdownload(){
 function hideDownload(){
     document.getElementById("downloadpopup").classList.remove("visible");
     document.getElementById("Downloadexit").style.visibility= "hidden";
+    document.querySelector(".Aboutmebackgroundblur").style.display = "none";
     var button = document.getElementById("button1");
     button.disabled = false;
     button = document.getElementById("button2");
