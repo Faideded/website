@@ -260,7 +260,7 @@ body {
         justify-content: center;
         align-items: center;
         font-size: larger;
-        font-weight: bold;
+        font-weight: bolder;
         color: rgb(233, 233, 233);
         display: flex;
         margin-top: 10%;
@@ -277,7 +277,7 @@ body {
         justify-content: center;
         align-items: center;
         font-size: larger;
-        font-weight: bold;
+        font-weight: bolder;
         color: rgb(233, 233, 233);
         display: flex;
         margin-top: 8%;
@@ -294,7 +294,7 @@ body {
         justify-content: center;
         align-items: center;
         font-size: larger;
-        font-weight: bold;
+        font-weight: bolder;
         color: rgb(233, 233, 233);
         display: flex;
         margin-top: 8%;
