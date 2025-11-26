@@ -31,13 +31,15 @@ function leftarrowchange() {
 
 function showdownload(){
     document.getElementById("downloadpopup").classList.add("visible");
+    document.getElementById("abtmeexit").style.visibility= "visible";
     var button = document.getElementById("button1");
     button.disabled = true;
     button = document.getElementById("button2");
     button.disabled = true;
 }
-function hidedDownload(){
+function hideDownload(){
     document.getElementById("downloadpopup").classList.remove("visible");
+    document.getElementById("Downloadexit").style.visibility= "hidden";
     var button = document.getElementById("button1");
     button.disabled = false;
     button = document.getElementById("button2");
