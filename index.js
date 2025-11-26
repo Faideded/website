@@ -36,3 +36,10 @@ function showdownload(){
     button = document.getElementById("button2");
     button.disabled = true;
 }
+function hidedDownload(){
+    document.getElementById("downloadpopup").classList.remove("visible");
+    var button = document.getElementById("button1");
+    button.disabled = false;
+    button = document.getElementById("button2");
+    button.disabled = false;
+}
