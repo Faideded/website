@@ -28,3 +28,11 @@ function leftarrowchange() {
 
 }
 /*not working start making*/
+
+function showdownload(){
+    document.getElementById("downloadpopup")classList.add("visible");
+    var button = document.getElementById("button1");
+    button.disabled = true;
+    button = document.getElementById("button2");
+    button.disabled = true;
+}

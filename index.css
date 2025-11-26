@@ -200,15 +200,24 @@ body {
         
     }
     /*not working */
-    .Downloadmenu {
+    .Downloadpopup {
         display: flex;
-        width: 1000px;
-        height: 600px;
-        background-color: red;
-        border: 0px;
-        border-radius: 100px;
-        margin-left: 23%;
-    } 
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+        width: 75%;
+        background-color: white;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        aspect-ratio: 2 / 1;
+        border-radius: 50px;
+    }
+    
+    .Downloadpopup.visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
     /*not working */
     
 .aboutme {
