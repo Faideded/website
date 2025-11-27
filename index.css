@@ -7,6 +7,7 @@
 
 :root {
     --bgcolor-main: #1D1B1B; 
+    --text-color:#ffffff; 
 }
 
 body {
@@ -49,7 +50,7 @@ body {
         button {
             width: 100px;
             height: 40px;
-            background: #ffffff;
+            background: var(--text-color);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -60,7 +61,7 @@ body {
         }
 
         button h2 {
-            color: #ffffff;
+            color: var(--text-color);
             font-size: 2rem;
             position: relative;
              z-index: 2;
@@ -96,14 +97,14 @@ body {
         }
 
         button h2 {
-            color: rgb(255, 255, 255);
+            color: var(--text-color);
             font-size: 2rem;
             position: relative;
              z-index: 2;
         }
 
         button:disabled {
-            color: #ffffff;
+            color: var(--text-color);
             background-color: #000000b3;
             box-shadow: 0 0 20px #00000080;
         }
@@ -207,7 +208,7 @@ body {
         pointer-events: none;
         transition: opacity 0.4s ease;
         width: 50%;
-        background-color: #ffffff;
+        background-color: var(--text-color);
         margin: auto;
         position: absolute;
         top: 0; left: 0; bottom: 0; right: 0;
@@ -330,7 +331,7 @@ body {
         transition: opacity 0.4s ease;
         z-index: 1000;
         width: 75%;
-        background-color: #ffffff;
+        background-color: var(--text-color);
         margin: auto;
         position: absolute;
         top: 0; left: 0; bottom: 0; right: 0;
