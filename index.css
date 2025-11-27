@@ -154,6 +154,8 @@ body {
             transform: scale(1.05);
             box-shadow: 0 0 20px #36363680;
         }
+
+        
     }
     
     .Bottombutton {
@@ -537,6 +539,13 @@ body {
         border-radius: 35px;
         top: 20%; left: 12.5%; right: 0; bottom: 0;
         transition: ease 200ms;
+
+        img{
+            position: absolute;
+            margin-left: 2%;
+            margin-top: 10%;
+            user-select: none;
+        }
     }
         .Maintext2.visible{
             opacity: 1;
@@ -556,6 +565,7 @@ body {
         font-weight: bold;
         user-select: none;
         margin: center;
+        margin-top: 9.2%;
         margin-left: 45%;
     }
 }
