@@ -7,12 +7,12 @@
 
 :root {
     --bgcolor-main: #1D1B1B; 
-    --text-color:#ffffff; 
+    --text-color: #ffffff; 
+    --button-main: #EF5B5B;
 }
 
 body {
     background-color: var(--bgcolor-main);
-
 
     .text1 {
         margin-left: 43%;
@@ -355,6 +355,7 @@ body {
         width: 10%;
         height: 7%;
         text-decoration: underline;
+        color: var(--button-main);
     }
 
     .Aboutmebackgroundblur {
