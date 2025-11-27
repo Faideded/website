@@ -117,6 +117,7 @@ body {
         margin-left: 80%;
 
         button {
+            z-index: 101;
             border-radius: 150px;
             border: 0px;
             img {
@@ -201,7 +202,7 @@ body {
 
     .Downloadpopup {
         opacity: 0;
-        z-index: 4;
+        z-index: 1000;
         pointer-events: none;
         transition: opacity 0.4s ease;
         width: 50%;
@@ -285,7 +286,7 @@ body {
     }
 
     .downloadbutton3{
-        z-index: 2;
+        z-index: 1000;
         user-select: none;
         justify-content: center;
         align-items: center;
@@ -303,7 +304,7 @@ body {
     }
 
     .downloadbutton4{
-        z-index: 2;
+        z-index: 1000;
         user-select: none;
         justify-content: center;
         align-items: center;
@@ -324,7 +325,7 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s ease;
-    z-index: 3;
+    z-index: 1000;
     width: 75%;
     background-color: white;
     margin: auto;
@@ -356,7 +357,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 102;
     backdrop-filter: blur(2px);
     background: rgba(0,0,0,0.3);
     display: none;
@@ -511,5 +512,18 @@ body {
     top: 0; left: -5%; right: 0; bottom: 0;
     user-select: none;
     }
-
+        .Maintext2 {
+        visibility: hidden;
+        z-index: 9;
+        position: absolute;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        justify-content: flex-start;
+        height: 63%;
+        width: 75%;
+        background-color: aliceblue;
+        border-radius: 35px;
+        top: 20%; left: 12.5%; right: 0; bottom: 0;
+    }
 }

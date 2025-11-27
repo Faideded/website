@@ -23,8 +23,12 @@ function hideaboutme() {
 }
 
 /*not working start making*/
-function leftarrowchange() {
+function rightarrowchange() {
+    document.getElementById("maintext2").style.visibility = "visible";
 
+}
+function leftarrowchange() {
+    document.getElementById("maintext2").style.visibility = "hidden";
 
 }
 /*not working start making*/
