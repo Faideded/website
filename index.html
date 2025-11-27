@@ -12,13 +12,21 @@
     <div class="Aboutmebackgroundblur"></div>
     <div class="aboutme" id="aboutmepopup">
         <h1 class="text2">About me</h1>
-        <img src="ui photo.svg" class="photo1" draggable="false">
+        <img src="Screenshot 2025-11-19 193602.svg" class="photo1" draggable="false">
         <p class="paragraph1">My name is Oliver Betts, an aspiring UI/UX programmer with a long-time passion for creating digital experiences
         that feel clean, intuitive, and enjoyable to use...</p>
         <p class="paragraph1">I love digging into how people actually use products, spotting the moments where things feel confusing, 
         and redesigning them into something smooth and satisfying...</p>
         <p class="paragraph1">I continue to grow in UI/UX, I’m constantly learning, exploring new tools, 
         and pushing myself to design with both clarity and personality...</p>
+        <button class="Link1" onclick="location.href='http://www.google.com'" type="button" style="color: #EF5B5B;">
+        My Tiktok</button>        
+        <button class="Link1" onclick="location.href='http://www.google.com'" type="button" style="color: #EF5B5B;">
+        My Instagram</button>  
+        <button class="Link1" onclick="location.href='http://www.google.com'" type="button" style="color: #EF5B5B;">
+        My LinkedIn</button>  
+        <button class="Link1" onclick="location.href='http://www.google.com'" type="button" style="color: #EF5B5B;">
+        My X / Twitter</button>   
         <div class="aboutmeX" style="visibility: hidden;" id="abtmeexit">
             <button onclick="hideaboutme()" class="aboutmeX"><img src="letterx.svg" draggable="false"></button>
         </div>
@@ -31,14 +39,31 @@
 
     <h1 class="text1" style="color: aliceblue;">Start project - A1</h1>
     <div class="Maintext">
-        <img src="A1work.png" class="project-image" draggable="false">
+    <div class="slideshow-container">
+
+    <div class="mySlidesfade">
+        <div class="numbertext">1 / 2</div>
+        <img src="A1 work.png" style="width:100%" draggable = false>
+        <div class="text">Whole model</div>
+    </div>
+
+    <div class="mySlidesfade">
+        <div class="numbertext">2 / 2</div>
+        <img src="A1work2.png" style="width:100%" draggable = false>
+        <div class="text">First stand</div>
+    </div>
+</div>
         <div class="maintext-content">
             <h1 class="text3">About This</h1>
             <p class="paragraph2">For this project I was tasked with creating a blender scene for certain themes of work. 
             We were given a brief and told how to do the project and what information needed to be displayed. 
-            For my theme I chose “Medieval”. Overall, my Development diary was decent with a little over 30 pages of A4 and 
+            For my theme I chose “Medieval”. Also, my Development diary was decent with a little over 30 pages of A4 and 
             5,300 words with detailed pictures and explanations telling the reader exactly what they want to see. 
             <br><br>I was also tasked with producing some Concept art which i made 3 basic designs and one final design which i annotated accordingly.
+            This only took me a few days as my art skills aren't the best.
+            <br><br>Overall, i feel that this project taught me a lot of practical skills and gave me passion for 
+            games creation and design. However, i feel that i could have done a little better when it came to the 
+            texturing side of things.
              
         </p>
         </div>
@@ -48,7 +73,27 @@
         <button onclick="rightarrowchange()"><img src="Rightarrow.svg" draggable="false"></button>
     </div>
     <div class="Bottombutton">
-        <button style="color:aliceblue">Download .Blend</button>
+        <button style="color:aliceblue" onclick="showdownload()">Download Work</button>
+    </div>
+    <div class="Downloadpopup" id="downloadpopup"> 
+        <h1 class="downloadheading">A1 - Medieval Market</h1>
+        <a href="Medieval Market resub A1 (1).blend" download draggable="false">
+        <button class="downloadbutton2" onclick="hideDownload()">Download .Blend</button>
+        </a>
+        <p>This file is the .blend file; <br>Vertecies: 93,687<br>Triangles: 175,125<br><br>File size: 90.63 MB</p>
+        <a href="Dev diary final.odt" download draggable="false">
+        <button class="downloadbutton3" onclick="hideDownload()" style="margin-top: -19%;">Download .odt</button>
+        </a>
+        <p style="margin-left: 40%; margin-top: 2%;">This file is the .Odt file; <br>Pages: 19(A4)<br>Word count: 4,708<br><br>File size: 7.73 MB</p>      
+        <a href="A1 Fly Around.mp4" download draggable="false">
+        <button class="downloadbutton4" onclick="hideDownload()" style="margin-top: -19%;">Download .Mp4</button>
+        </a>
+        <p style="margin-left: 77%;">This file is the .MP4 file; <br>Quality: 1920 x 1080<br>Triangles: 175,125<br><br>File size: 6.3 MB</p>
+        <div class="DownloadX" style="visibility: hidden;" id="Downloadexit">
+        <button onclick="hideDownload()" class="DownloadX"><img src="letterx.svg" draggable="false"></button>
+        </div>
+    </div>
+    <div class="Maintext2" id="maintext2"> 
     </div>
     <script type="text/javascript" src="index.js"></script>
 </body>

@@ -112,12 +112,12 @@ body {
         display: flex;
         width: min-content;
         margin: auto;
-        margin-top: 13px;
         gap:6px;
-        margin-top: 2.5%;
+        margin-top: 4%;
         margin-left: 80%;
 
         button {
+            z-index: 101;
             border-radius: 150px;
             border: 0px;
             img {
@@ -199,23 +199,133 @@ body {
         }
         
     }
-    /*not working */
-    .Downloadmenu {
-        display: flex;
-        width: 1000px;
-        height: 600px;
-        background-color: red;
-        border: 0px;
-        border-radius: 100px;
-        margin-left: 23%;
-    } 
-    /*not working */
+
+    .Downloadpopup {
+        opacity: 0;
+        z-index: 1000;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+        width: 50%;
+        background-color: white;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        aspect-ratio: 2 / 1;
+        border-radius: 50px;
+
+        p{
+            margin-left: 3%;
+            margin-top: 2%;
+            user-select: none;
+            font-weight: 650;
+        }
+    }
+
+    .Downloadpopup.visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
     
+    .DownloadX {
+        button {
+            background-color: rgb(194, 194, 194);
+            width: 4%;
+            height: 8%;
+            border: 0px;
+            border-radius: 100px;
+            top: 5%; left:0; right: -90%; bottom: 90%;
+            aspect-ratio: 1 / 1;
+            margin: auto;
+            position: absolute;
+
+            img {
+                height: 65%;
+                width: 70%;
+                user-select: none;
+            }
+        }
+        button {
+            background: #cacaca;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 100px;
+            opacity: 1;
+            transition: background 2s ease-in-out;
+
+        }
+
+        button:hover {
+            transform: scale(1.09);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 0 20px #dddddd;
+        }
+    }
+    .downloadheading{
+        font-weight: bolder;
+        text-decoration: underline;
+        text-align: center;
+        user-select: none;
+    }
+    .downloadbutton2{
+        user-select: none;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: rgb(233, 233, 233);
+        display: flex;
+        margin-top: 3%;
+        margin-left: 3%;
+        background-color: #28b7ff;
+        width: 20%;
+        height: 10%;
+        border: 0px;
+        border-radius: 50px;
+    }
+
+    .downloadbutton3{
+        z-index: 1000;
+        user-select: none;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: rgb(233, 233, 233);
+        display: flex;
+        margin-top: -36%;
+        margin-left: 40%;
+        background-color: #28b7ff;
+        width: 20%;
+        height: 10%;
+        border: 0px;
+        border-radius: 50px;
+    }
+
+    .downloadbutton4{
+        z-index: 1000;
+        user-select: none;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: rgb(233, 233, 233);
+        display: flex;
+        margin-top: -32.5%;
+        margin-left: 77%;
+        background-color: #28b7ff;
+        width: 20%;
+        height: 10%;
+        border: 0px;
+        border-radius: 50px;
+    }
+
 .aboutme {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s ease;
-    z-index: 3;
+    z-index: 1000;
     width: 75%;
     background-color: white;
     margin: auto;
@@ -229,14 +339,25 @@ body {
     opacity: 1;
     pointer-events: auto;
 }
-
+.Link1{
+    border: 0;
+    background-color: rgb(15, 15, 15);
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 12%;
+    margin-top: 5%;
+    font-size: larger;
+    width: 10%;
+    height: 7%;
+    text-decoration: underline;
+}
 .Aboutmebackgroundblur {
     width: 100%;
     height: 100%;
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 102;
     backdrop-filter: blur(2px);
     background: rgba(0,0,0,0.3);
     display: none;
@@ -299,8 +420,8 @@ body {
         border-radius: 15px;
         margin-left:2%;
         position: absolute;
-        margin-top: 7%;
-        height: 30%;
+        margin-top: 5%;
+        height: 55%;
         width: 30%;
         user-select: none;
         
@@ -319,7 +440,7 @@ body {
         top: 20%; left: 12.5%; right: 0; bottom: 0;
     }
 
-    .Maintext img{
+    .project-image{
         width: 30%;        
         height: 50%;       
         border-radius: 50px;
@@ -327,6 +448,13 @@ body {
         margin-bottom: 4%;
         margin-right: 65%;  
         user-select: none;
+        animation: slide 20s infinite;
+    }
+    @keyframes slide{
+        25%{background:url("A1work.png")
+        }
+        50%{background:url("A1work2.png")
+        }
     }
 
     .text3 {
@@ -335,8 +463,8 @@ body {
         margin: 10px 0;         
         text-align: left;
         width: 80%;
-        margin-top: -25%;
-        margin-left: 35%;             
+        margin-top: -30%;
+        margin-left: 45%;             
         user-select: none;
     }
 
@@ -344,12 +472,58 @@ body {
         border-radius: 15px;
         font-weight: 650;
         margin: 0 0 0 0;    
-        width: 50%;
+        width: 40%;
         margin-top: 2%;
         height: 10%;            
         user-select: none;
         text-align: left;
-        margin-left: 35%;
+        margin-left: 45%;
     }
-    
+
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    right: 25%;
+    top: 6%;
+    scale: 0.6;
+    user-select: none;
+    }
+
+    .mySlides {
+    display: none;
+    }
+
+    .text { 
+    color: #eeeeee;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    user-select: none;
+    }
+
+    .numbertext {
+    color: #000000;
+    font-size: 22px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0; left: -5%; right: 0; bottom: 0;
+    user-select: none;
+    }
+        .Maintext2 {
+        visibility: hidden;
+        z-index: 9;
+        position: absolute;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        justify-content: flex-start;
+        height: 63%;
+        width: 75%;
+        background-color: aliceblue;
+        border-radius: 35px;
+        top: 20%; left: 12.5%; right: 0; bottom: 0;
+    }
 }
