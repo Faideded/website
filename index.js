@@ -27,9 +27,7 @@ function rightarrowchange() {
     document.getElementById("text2").style.visibility = "hidden";
     var button = document.getElementById("buttonright");
     button.disable = true 
-    button.parentElement.style.background = ("#000000ff");
-
-    
+    button.parentElement.style.background = ("#000000ff"); 
 }
 
 function leftarrowchange() {
@@ -37,7 +35,7 @@ function leftarrowchange() {
     document.getElementById("text2").style.visibility = "visible";
     var button = document.getElementById("buttonright");
     button.parentElement.style.background = ("#DADADA");
-    button.getElementById("buttonright").disable = false 
+    button.getElementById("buttonright").disable = false
 }
 
 function showdownload(){
