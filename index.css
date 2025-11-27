@@ -9,6 +9,7 @@
     --bgcolor-main: #1D1B1B; 
     --text-color: #ffffff; 
     --button-main: #EF5B5B;
+    --downloadbut: #0088cc;
 }
 
 body {
@@ -165,7 +166,7 @@ body {
         button {
             width: 185px;
             height: 53px;
-            background: #0088cc;
+            background: var(--downloadbut);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -282,7 +283,7 @@ body {
         display: flex;
         margin-top: 3%;
         margin-left: 3%;
-        background-color: #28b7ff;
+        background-color: var(--downloadbut);
         width: 20%;
         height: 10%;
         border: 0px;
@@ -300,7 +301,7 @@ body {
         display: flex;
         margin-top: -36%;
         margin-left: 40%;
-        background-color: #28b7ff;
+        background-color: var(--downloadbut);
         width: 20%;
         height: 10%;
         border: 0px;
@@ -318,7 +319,7 @@ body {
         display: flex;
         margin-top: -32.5%;
         margin-left: 77%;
-        background-color: #28b7ff;
+        background-color: var(--downloadbut);
         width: 20%;
         height: 10%;
         border: 0px;
