@@ -24,11 +24,15 @@ function hideaboutme() {
 
 /*not working start making*/
 function rightarrowchange() {
-    document.getElementById("maintext2").style.visibility = "visible";
-
+    document.getElementById("maintext2").classList.add ("visible");
+    document.getElementById("text2").style.visibility = "hidden";
+    var button = document.getElementById("buttonright");
+    button.disabled = true;
 }
+
 function leftarrowchange() {
-    document.getElementById("maintext2").style.visibility = "hidden";
+    document.getElementById("maintext2").classList.remove ("visible");
+    document.getElementById("text2").style.visibility = "visible";
 
 }
 /*not working start making*/
@@ -66,3 +70,4 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 4000); 
 }
+
