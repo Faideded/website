@@ -22,16 +22,21 @@ function hideaboutme() {
     button.disabled = false;
 }
 
-/*not working start making*/
 function rightarrowchange() {
-    document.getElementById("maintext2").style.visibility = "visible";
-
+    document.getElementById("maintext2").classList.add ("visible");
+    document.getElementById("text2").style.visibility = "hidden";
+    var button = document.getElementById("buttonright");
+    button.disable = true 
+    button.parentElement.style.background = ("#000000ff"); 
 }
+
 function leftarrowchange() {
-    document.getElementById("maintext2").style.visibility = "hidden";
-
+    document.getElementById("maintext2").classList.remove ("visible");
+    document.getElementById("text2").style.visibility = "visible";
+    var button = document.getElementById("buttonright");
+    button.parentElement.style.background = ("#DADADA");
+    button.getElementById("buttonright").disable = false
 }
-/*not working start making*/
 
 function showdownload(){
     document.getElementById("downloadpopup").classList.add("visible");
@@ -42,6 +47,7 @@ function showdownload(){
     button = document.getElementById("button2");
     button.disabled = true;
 }
+
 function hideDownload(){
     document.getElementById("downloadpopup").classList.remove("visible");
     document.getElementById("Downloadexit").style.visibility= "hidden";
@@ -66,3 +72,4 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 4000); 
 }
+
